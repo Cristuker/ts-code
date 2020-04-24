@@ -7,7 +7,11 @@
  * -< Fora do horário
  */
 
- let funcionario:{nome: string, supervisores: [string,string], baterPonto:(hora: number) => string} = {
+ let funcionario:{
+     nome: string, 
+     supervisores: [string,string], 
+     baterPonto:(hora: number) => string
+    } = {
      nome: 'Cristian',
      supervisores:['João','Carlos'],
      baterPonto: function (hora: number): string {
@@ -21,3 +25,4 @@
 console.log(funcionario.nome)
 console.log(funcionario.supervisores)
 console.log(funcionario.baterPonto(8))
+console.log(funcionario.baterPonto(9))

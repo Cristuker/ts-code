@@ -82,3 +82,57 @@ let usuário:{ nome: string, idade: number } = {
 usuário = {nome:'carlos', idade:10 }
 
 console.log(usuário)
+
+// tipos personalizados
+/**
+ * Criando tipo personalizado, para evitar replicar a declaração a todo momento
+ *
+ */
+type Funcionario = {
+    nome: string, 
+    supervisores: [string,string], 
+    baterPonto:(hora: number) => string
+   }
+
+let funcionario2: Funcionario = {
+    nome: 'Cristian',
+    supervisores:['João','Carlos'],
+    baterPonto: function (hora: number): string {
+        if(hora <= 8){
+            return 'Horário normal'
+        }
+        return 'Fora do horário'
+    }
+}
+
+// unio types
+
+let nota: number | string = 10; // minha nota aceita o tipo number string, evitando o any que abre para qualquert tipo
+console.log(`Minha nota é ${nota}!`);
+
+nota = '10'
+console.log(`Minha nota é ${nota}!`);
+
+//checando tipo
+let valor = 30
+
+// o tipo never, quando a fuynção nunca retorna nada, nunca vai sair da função. Da erro ou entra em looping infinito
+
+function falha(msg: string): never {
+    throw new Error(msg);
+}
+
+const produto = {
+    nome: 'Sabão',
+    preco: -1,
+    validarProduto () {
+        if(!this.nome || this.nome.length === 0){
+            falha('Azedo irmão')
+        }
+        if(this.preco <= 0){
+            falha('Azedo preço')
+        }
+    }
+}
+
+produto.validarProduto()

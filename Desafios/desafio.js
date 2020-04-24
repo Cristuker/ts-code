@@ -20,3 +20,4 @@ var funcionario = {
 console.log(funcionario.nome);
 console.log(funcionario.supervisores);
 console.log(funcionario.baterPonto(8));
+console.log(funcionario.baterPonto(9));
