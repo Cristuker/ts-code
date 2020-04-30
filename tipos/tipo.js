@@ -91,4 +91,15 @@ var produto = {
         }
     }
 };
-produto.validarProduto();
+//produto.validarProduto()
+var altura = 12;
+//altura = null //da erro
+var alturaOpcional = 12;
+alturaOpcional = null;
+var contato1 = {
+    nome: 'Cristian',
+    tel1: '128673518',
+    tel2: null
+};
+var teste = null; //a variavel fica com tipo any.
+console.log('contato', contato1);

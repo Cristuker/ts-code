@@ -135,4 +135,26 @@ const produto = {
     }
 }
 
-produto.validarProduto()
+//produto.validarProduto()
+
+let altura = 12;
+//altura = null //da erro
+
+let alturaOpcional: null | number = 12;
+alturaOpcional = null;
+
+type Contato ={
+    nome: string,
+    tel1: string,
+    tel2: string | null,
+}
+
+const contato1: Contato = {
+    nome:'Cristian',
+    tel1: '128673518',
+    tel2: null
+}
+
+let teste:null = null //a variavel fica com tipo any.
+
+console.log('contato', contato1);
