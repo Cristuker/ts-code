@@ -1,4 +1,63 @@
 "use strict";
+/**
+ * Desafio
+ * Criar um objeto funcionário com:
+ * -Array de string com os nomes do supervisores
+ * -função de bater que recebe hora e retorna uma string
+ * -> Ponto normal
+ * -< Fora do horário
+ */
+let funcionario = {
+    nome: 'Cristian',
+    supervisores: ['João', 'Carlos'],
+    baterPonto: function (hora) {
+        if (hora <= 8) {
+            return 'Horário normal';
+        }
+        return 'Fora do horário';
+    }
+};
+console.log(funcionario.nome);
+console.log(funcionario.supervisores);
+console.log(funcionario.baterPonto(8));
+console.log(funcionario.baterPonto(9));
+let contaBancaria = {
+    saldo: 3456,
+    depositar(valor) {
+        this.saldo += valor;
+    }
+};
+let correntista = {
+    nome: 'Ana Silva',
+    contaBancaria: contaBancaria,
+    contatos: ['34567890', '98765432']
+};
+correntista.contaBancaria.depositar(3000);
+console.log(correntista);
+let canal = 'Gaveta';
+let inscritos = 10000;
+//canal = inscritos;
+console.log(canal);
+function soma(a, b) {
+    return a + b;
+}
+console.log(soma(5, 6));
+let coisa; //não gera problema
+coisa = 12; //não gera problema
+coisa = 'abc'; //não gera problema
+//TS faz uma analise de fluxo e sabe o tipo da variavel em todos os pontos
+function saudar(isManha) {
+    let saudacao;
+    if (isManha) {
+        saudacao = 'Bom dia';
+    }
+    else {
+        saudacao = 'É isso';
+    }
+    return saudacao;
+}
+const a = 'carai burracha, funciona msm';
+console.log(a);
 //string
 let nome = 'João';
 console.log(nome);
@@ -21,6 +80,7 @@ console.log(endereco);
 console.table(endereco);
 // enums
 var Cor;
+// enums
 (function (Cor) {
     Cor[Cor["Cinza"] = 0] = "Cinza";
     Cor[Cor["Azul"] = 1] = "Azul";
@@ -103,4 +163,4 @@ const contato1 = {
 };
 let teste = null; //a variavel fica com tipo any.
 console.log('contato', contato1);
-//# sourceMappingURL=tipo.js.map
+//# sourceMappingURL=app.js.map
