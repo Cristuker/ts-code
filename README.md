@@ -6,6 +6,4 @@
 * Estudo de Tipos
 * Desafios
 
-<footer style="text-align:center;">
-Made whit ❤️ by <strong><a href="https://www.linkedin.com/in/cristian-silva-dev" target="blank">Cristian Silva</a></strong>
-</footer>
+<p align="center">Made whit ❤️ by <strong><a href="http://linkedin.com/in/cristian-silva-dev" target="blank" >Cristian</></p></strong>
