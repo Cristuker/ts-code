@@ -21,7 +21,6 @@ console.log(endereco);
 console.table(endereco);
 // enums
 var Cor;
-// enums
 (function (Cor) {
     Cor[Cor["Cinza"] = 0] = "Cinza";
     Cor[Cor["Azul"] = 1] = "Azul";
