@@ -147,4 +147,29 @@ class Multi extends Calculo {
 let c1 = new Soma();
 c1.executar(1, 2, 432, 41, 2, 7);
 console.log(c1.getResultado());
+//Singleton -> Quando vocêr quer ter apenas uma instancia da classe. 
+let Unico = /** @class */ (() => {
+    class Unico {
+        constructor() { }
+        static getInstance() {
+            return Unico.instance;
+        }
+        agora() {
+            return new Date;
+        }
+    }
+    Unico.instance = new Unico;
+    return Unico;
+})();
+//const errado = new Unico();
+console.log(Unico.getInstance().agora());
+//Atributos somente leitura -> Write one time only
+class Aviao {
+    constructor(modelo, prefixo) {
+        this.prefixo = prefixo;
+        this.modelo = modelo;
+    }
+}
+const testAe = new Aviao("asd", "qwe");
+//testAe.modelo = 'aaa'; //Ao tentar atribuir novamente gera um erro.
 //# sourceMappingURL=class.js.map
