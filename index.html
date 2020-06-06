@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typescript</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.5/system.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.5/system.js"></script> -->
 </head>
 <body>
     <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;" >Hora de aprender TypeScript</h1>
@@ -13,18 +13,19 @@
     <script src="namespaces/geometriaCirc.js"></script>
     <script src="namespaces/geometriaRet.js"></script>
     <script src="namespaces/namespaces.js"></script>
+    <script src="interfaces/interfaces.js"></script>
     <!-- <script src="modulos/modulos.js"></script> -->
     <script>
-        SystemJS.config({
-            baseUrl: '/modulos',
-            packages: {
-                '/modulos': {
-                    defaultJSExtension: true
-                }
-            }
-        })
+        // SystemJS.config({
+        //     baseUrl: '/modulos',
+        //     packages: {
+        //         '/modulos': {
+        //             defaultJSExtension: true
+        //         }
+        //     }
+        // })
 
-        SystemJS.import('./modulos/modulos.js')
+        // SystemJS.import('./modulos/modulos.js')
     </script>
 </body>
 </html>
