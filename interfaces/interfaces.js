@@ -44,4 +44,24 @@ class ABC {
     b() { }
     c() { }
 }
+Object.prototype.log = function () {
+    console.log(this.toString());
+};
+const x = 2;
+const y = 23;
+const z = 5;
+console.log(x);
+console.log(y);
+console.log(z);
+x.log();
+y.log();
+z.log();
+const cli = {
+    nome: 'Pedro',
+    toString() {
+        return this.nome;
+    },
+    age: 12
+};
+cli.log();
 //# sourceMappingURL=interfaces.js.map
