@@ -1,10 +1,23 @@
+<p align="center" >
+  <img style="margin-top:20px;" src="./images/ts-logo.jpg" alt="TypeScript Logo" />
+</p>
 
-![TypeScript Logo](/images/ts-logo.jpg)
 
-# Repositório com exercicios feitos durante o curso de TypeScript
+# Exercicios e desafios do curso Entendendo TypeScript(Cod3r)
+
+### Tópicos abordados nessa repositório
 
 * Estudo de Tipos
 * Desafios
+* Generics
+* Interfaces
+* Namespaces
+* Modulos
+* Decorators
+* Classes
+* Integração com React
+* Integração com Gulp
+* Integração com Webpack
 
 ---
 
